@@ -17,31 +17,39 @@
 ## 📁 폴더/파일 구조
 ```
 source/
-  01_v2.0_YoutubeDownloader_byIndex.py      # 유튜브 영상 다운로드
-  02_extract_audio_from_video.py.py         # 영상에서 오디오 추출
-  03_split_mp3_by_30sec.py                  # 오디오 30초 단위 분할
-  04_(test)wavelet_transform_and_visulization.py
-  05_(no processed)wavelet_transform_and_csv.py
-  06_wavelet_transform_and_csv_label.py
-  06-1_random_sample_and_split.py
-  07_gpu_test.py
-  07_train4csv-edited.py
-  08_(test)scalergram.py
-  09_extract_waveform.py
-  10-1_(paused)making_chart.py
-  10-2_(paused)making_chart_multicore.py
-  11_cnn_by_eggimage_extractor.py
-  12-1_making_signal_chart(wave).py
-  12-2_making_signal_chart(linear).py
-  12-3_making_signal_chart(2D_graphic).py
+  01_오리지널 데이터 다운로드/
+    01_v2.0_YoutubeDownloader_byIndex.py
+  02_1차원 데이터셋 구축/
+    02_extract_audio_from_video.py.py
+    03_split_mp3_by_30sec.py
+    04_(test)wavelet_transform_and_visulization.py
+    05_(no processed)wavelet_transform_and_csv.py
+    06-1_random_sample_and_split.py
+    06_wavelet_transform_and_csv_label.py
+  03_GPU 활성화 확인/
+    07_gpu_test.py
+  04_(학습)1차원 데이터 MLP 처리/
+    07_train4csv-edited.py
+  05_2차원 그래픽 데이터셋 구축/
+    08_(test)scalergram.py
+    09_extract_waveform.py
+    10-1_(paused)making_chart.py
+    10-2_(paused)making_chart_multicore.py
+  06_(학습)2차원 데이터 CNN/
+    11_cnn_by_eggimage_extractor.py
+    12-1_making_signal_chart(wave).py
+    12-2_making_signal_chart(linear).py
+    12-3_making_signal_chart(2D_graphic).py
+document/
+  발표 자료.pptx
+웨이블릿 필터 중간 확인/
+  wavelet_features.csv
+  wavelet_result.png
+참고한 코드/
   cnn_고양이 강아지.py
   matploblib_test.py
   tooleegchart.py
   train4csv-학습예제.py
-  wavelet_features.csv
-  wavelet_result.png
-document/
-  Presentation.pptx
 README.md
 requirements.txt
 ```
